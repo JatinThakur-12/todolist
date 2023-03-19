@@ -38,6 +38,9 @@ app.post("/",function(req,res){
 app.get("/work", function(req,res){
     res.render("list",{listTitle:"Work List",newListItems: workListItems});
 });
+app.get("/about", function(req,res){
+    res.render("about");
+});
 app.listen(PORT, function(){
     console.log("Sever is running on port"+PORT);
 })
